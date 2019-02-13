@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0488822213B56800B96CD3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0488812213B56800B96CD3 /* DataManager.swift */; };
+		3D0488842213B79700B96CD3 /* ServerResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0488832213B79700B96CD3 /* ServerResponseModel.swift */; };
+		3D0488862213B95800B96CD3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0488852213B95800B96CD3 /* UserModel.swift */; };
 		3D3CED7F2212F4EC00C07AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CED7E2212F4EC00C07AB9 /* AppDelegate.swift */; };
 		3D3CED812212F4EC00C07AB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CED802212F4EC00C07AB9 /* ViewController.swift */; };
 		3D3CED842212F4EC00C07AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3CED822212F4EC00C07AB9 /* Main.storyboard */; };
@@ -14,6 +17,11 @@
 		3D3CED892212F4EC00C07AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3CED872212F4EC00C07AB9 /* LaunchScreen.storyboard */; };
 		3D3CED942212F4EC00C07AB9 /* MindValleyDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CED932212F4EC00C07AB9 /* MindValleyDemoAppTests.swift */; };
 		3D3CED9F2212F4ED00C07AB9 /* MindValleyDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CED9E2212F4ED00C07AB9 /* MindValleyDemoAppUITests.swift */; };
+		3D3CEDB62212FC5800C07AB9 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CEDB52212FC5800C07AB9 /* NetworkRequest.swift */; };
+		3D3CEDB82212FD4700C07AB9 /* NetworkRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CEDB72212FD4700C07AB9 /* NetworkRequestHelper.swift */; };
+		3D3CEDBA2212FD6600C07AB9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CEDB92212FD6600C07AB9 /* Reachability.swift */; };
+		3D3CEDBC2212FD8E00C07AB9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CEDBB2212FD8E00C07AB9 /* Parser.swift */; };
+		3D3CEDBF2213083600C07AB9 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3CEDBE2213083600C07AB9 /* Messages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D0488812213B56800B96CD3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		3D0488832213B79700B96CD3 /* ServerResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponseModel.swift; sourceTree = "<group>"; };
+		3D0488852213B95800B96CD3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		3D3CED7B2212F4EC00C07AB9 /* MindValleyDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindValleyDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3CED7E2212F4EC00C07AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D3CED802212F4EC00C07AB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,11 @@
 		3D3CED9A2212F4ED00C07AB9 /* MindValleyDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindValleyDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3CED9E2212F4ED00C07AB9 /* MindValleyDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindValleyDemoAppUITests.swift; sourceTree = "<group>"; };
 		3D3CEDA02212F4ED00C07AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3CEDB52212FC5800C07AB9 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		3D3CEDB72212FD4700C07AB9 /* NetworkRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestHelper.swift; sourceTree = "<group>"; };
+		3D3CEDB92212FD6600C07AB9 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		3D3CEDBB2212FD8E00C07AB9 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		3D3CEDBE2213083600C07AB9 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0488802213B54E00B96CD3 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3D0488812213B56800B96CD3 /* DataManager.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
 		3D3CED722212F4EC00C07AB9 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +121,9 @@
 		3D3CED7D2212F4EC00C07AB9 /* MindValleyDemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				3D3CED7E2212F4EC00C07AB9 /* AppDelegate.swift */,
-				3D3CED802212F4EC00C07AB9 /* ViewController.swift */,
-				3D3CED822212F4EC00C07AB9 /* Main.storyboard */,
-				3D3CED852212F4EC00C07AB9 /* Assets.xcassets */,
-				3D3CED872212F4EC00C07AB9 /* LaunchScreen.storyboard */,
-				3D3CED8A2212F4EC00C07AB9 /* Info.plist */,
+				3D3CEDB12212F7B800C07AB9 /* Library */,
+				3D3CEDAF2212F71E00C07AB9 /* Source */,
+				3D3CEDB02212F73400C07AB9 /* Resource */,
 			);
 			path = MindValleyDemoApp;
 			sourceTree = "<group>";
@@ -123,6 +144,97 @@
 				3D3CEDA02212F4ED00C07AB9 /* Info.plist */,
 			);
 			path = MindValleyDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		3D3CEDAC2212F69900C07AB9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CED802212F4EC00C07AB9 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D3CEDAD2212F6F600C07AB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D0488832213B79700B96CD3 /* ServerResponseModel.swift */,
+				3D0488852213B95800B96CD3 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D3CEDAE2212F70600C07AB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D3CEDAF2212F71E00C07AB9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CED7E2212F4EC00C07AB9 /* AppDelegate.swift */,
+				3D3CEDB42212F80D00C07AB9 /* Helpers */,
+				3D3CEDB32212F80300C07AB9 /* Backend */,
+				3D3CEDAD2212F6F600C07AB9 /* Model */,
+				3D3CEDAE2212F70600C07AB9 /* View */,
+				3D3CEDAC2212F69900C07AB9 /* ViewControllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3D3CEDB02212F73400C07AB9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CEDB22212F7D400C07AB9 /* Storyboard */,
+				3D3CED852212F4EC00C07AB9 /* Assets.xcassets */,
+				3D3CED8A2212F4EC00C07AB9 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3D3CEDB12212F7B800C07AB9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		3D3CEDB22212F7D400C07AB9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CED872212F4EC00C07AB9 /* LaunchScreen.storyboard */,
+				3D3CED822212F4EC00C07AB9 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3D3CEDB32212F80300C07AB9 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				3D0488802213B54E00B96CD3 /* Data Manager */,
+				3D3CEDBD2212FF1200C07AB9 /* Network Manager */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		3D3CEDB42212F80D00C07AB9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CEDBE2213083600C07AB9 /* Messages.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3D3CEDBD2212FF1200C07AB9 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CEDB52212FC5800C07AB9 /* NetworkRequest.swift */,
+				3D3CEDB72212FD4700C07AB9 /* NetworkRequestHelper.swift */,
+				3D3CEDB92212FD6600C07AB9 /* Reachability.swift */,
+				3D3CEDBB2212FD8E00C07AB9 /* Parser.swift */,
+			);
+			path = "Network Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +368,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3CEDB82212FD4700C07AB9 /* NetworkRequestHelper.swift in Sources */,
+				3D0488822213B56800B96CD3 /* DataManager.swift in Sources */,
 				3D3CED812212F4EC00C07AB9 /* ViewController.swift in Sources */,
+				3D3CEDBC2212FD8E00C07AB9 /* Parser.swift in Sources */,
+				3D3CEDBF2213083600C07AB9 /* Messages.swift in Sources */,
+				3D3CEDB62212FC5800C07AB9 /* NetworkRequest.swift in Sources */,
+				3D3CEDBA2212FD6600C07AB9 /* Reachability.swift in Sources */,
+				3D0488842213B79700B96CD3 /* ServerResponseModel.swift in Sources */,
+				3D0488862213B95800B96CD3 /* UserModel.swift in Sources */,
 				3D3CED7F2212F4EC00C07AB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C94P4T4MCM;
-				INFOPLIST_FILE = MindValleyDemoApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MindValleyDemoApp/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C94P4T4MCM;
-				INFOPLIST_FILE = MindValleyDemoApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MindValleyDemoApp/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
