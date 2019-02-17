@@ -87,35 +87,24 @@ extension NetworkRequest {
 
         // Connection Validation
         guard Reachability().isConnected() else {
-            return completion(false, false, nil)
 
+            return completion(false, false, nil)
         }
 
         // Prepare request
         let session = URLSession.shared
         guard let request = buildRequest(to: path, method: method, headers: headers, queryParams: queryParams, body: body) else {
-            return completion(true, false, nil)
 
+            return completion(true, false, nil)
         }
 
-        // Log
-
         let task = session.dataTask(with: request) { (data, response, error) in
-            /* Status code validation for strict validation
-             * 200 = OK
-             * No implementation Yet
-             */
-            if let _response = response as? HTTPURLResponse, _response.statusCode == 200 {
-
-            }
-
 
             // Validation
             if let _ = error {
+
                 completion(true, false, nil)
-
             }
-
 
             // Notify parent with response data
             completion(true, true, data)

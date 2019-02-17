@@ -22,6 +22,7 @@ struct Parser {
         }
         catch {
 
+            print(error)
             return nil
         }
     }

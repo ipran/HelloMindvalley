@@ -8,11 +8,6 @@
 
 import Foundation
 
-struct ServerResponseModel: Decodable {
-
-    var serverResponse: [ServerResponse]?
-}
-
 struct ServerResponse: Decodable {
 
     var id: String?
@@ -38,8 +33,8 @@ struct URLModel: Decodable {
 }
 
 struct CategoryModel: Decodable {
-    var id: String?
+    var id: Int?
     var title: String?
-    var photo_count: String?
+    var photo_count: Int?
     var links: Link?
 }

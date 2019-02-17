@@ -33,7 +33,7 @@ public enum HTTPEncoding {
 // Endpoint URL's
 enum APIEndpoint: String {
 
-    case baseUrl = "http://pastebin.com/raw/wgkJgazE"
+    case baseUrl = "https://pastebin.com/raw/wgkJgazE"
     case void = "MaindValleyDemoApp"
 
     var url: URL? {

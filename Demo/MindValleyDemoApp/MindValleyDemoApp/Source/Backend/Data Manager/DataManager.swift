@@ -27,22 +27,32 @@ class DataManager: NSObject {
     }
 }
 
+
+
 extension DataManager {
-    func fetchServerData(_ completion: @escaping(_ status: Bool, _ statusMessage: String, _ serverResponseModel: ServerResponseModel?) -> ()) {
+
+    func fetchServerData(_ completion: @escaping(_ status: Bool, _ statusMessage: String, _ serverResponse: [ServerResponse]) -> ()) {
+
         // Send Request
         networkRequest.request(to: APIEndpoint.baseUrl, method: HTTPMethod.get, headers: HTTPHeaders(), queryParams: Parameters(), body: Data()) { (networkStatus, responseStatus, data) in
+
             // Network error case
             if !networkStatus {
-                completion(false, self.messages.noConnection, nil)
+
+                completion(false, self.messages.noConnection, [ServerResponse]())
                 return
             }
+
             // Success case
-            if let serverResponse: ServerResponseModel = Parser.parse(data) {
-                completion(true,self.messages.success,serverResponse)
-                return
+            if let data = data {
+
+                if let serverResponse: [ServerResponse] = Parser.parse(data) {
+
+                    completion(true,self.messages.success,serverResponse)
+                    return
+                }
             }
-            completion(false,self.messages.serverNotResponding,nil)
+            completion(false,self.messages.serverNotResponding, [ServerResponse]())
         }
     }
-
 }
