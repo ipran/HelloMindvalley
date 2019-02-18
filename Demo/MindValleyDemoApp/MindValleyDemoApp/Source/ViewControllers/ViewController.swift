@@ -10,13 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+
     var listOfData: [ServerResponse] = []
 
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureView()
         loadData()
     }
+}
+
+// General Functions
+extension ViewController {
 
     func loadData() {
         // Load data from server
@@ -25,12 +33,26 @@ class ViewController: UIViewController {
             if status {
 
                 self.listOfData = serverResponse
+                self.refresh()
             }
         }
     }
 
+    func configureView() {
+
+        navigationItem.title = "Users"
+    }
+
+    func refresh() {
+
+        DispatchQueue.main.async {
+
+            self.tableView.reloadData()
+        }
+    }
 }
 
+// Tableview Related
 extension ViewController: UITableViewDataSource,UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,11 +69,21 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier) as! HomeTableViewCell
-        let name = listOfData[indexPath.row].user?.name
-//        let userImage = listOfData[indexPath.row].user?.profile_image?.medium
-        let userImage = UIImage()
-        cell.data = (name, userImage)
-        return cell
+        if listOfData.count > 0 {
+
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier) as! HomeTableViewCell
+            var user = UserModel()
+            user.name = listOfData[indexPath.row].user?.name
+            user.id = listOfData[indexPath.row].user?.id
+            user.profile_image = listOfData[indexPath.row].user?.profile_image
+            cell.data = user
+            return cell
+        }
+        else {
+
+//            let cell = tableView.dequeueReusableCell(withIdentifier: NoDataTableViewCell.identifier) as! NoDataTableViewCell
+            return UITableViewCell()
+        }
+
     }
 }

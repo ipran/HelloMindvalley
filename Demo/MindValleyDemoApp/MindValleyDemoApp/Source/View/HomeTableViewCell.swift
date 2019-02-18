@@ -12,13 +12,16 @@ class HomeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
-
-    var data: (name: String?, userImage: UIImage?) {
+    @IBOutlet weak var idLabel: UILabel!
+    
+    var data: UserModel? {
 
         didSet {
 
-            userImageView.image = data.userImage
-            usernameLabel.text = data.name
+            let imageString = data?.profile_image?.medium
+            userImageView.image = UIImage()
+            idLabel.text = data?.id
+            usernameLabel.text = data?.name
         }
     }
 
