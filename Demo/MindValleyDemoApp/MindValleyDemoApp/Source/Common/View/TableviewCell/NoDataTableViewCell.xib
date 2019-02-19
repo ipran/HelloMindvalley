@@ -46,7 +46,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="noDataLabel" destination="aUT-hp-TI3" id="hJ0-Yw-49p"/>
+                <outlet property="noDataLabel" destination="aUT-hp-TI3" id="pC6-aG-pl5"/>
             </connections>
             <point key="canvasLocation" x="376.171875" y="-252.34375"/>
         </tableViewCell>

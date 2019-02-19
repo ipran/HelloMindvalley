@@ -10,20 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Outlet Connection
     @IBOutlet weak var tableView: UITableView!
-
+    // Declarations
     var listOfData: [ServerResponse] = []
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Register NoDataTableViewCell Xib file
+        self.tableView.register(UINib(nibName: "NoDataTableViewCell", bundle: nil), forCellReuseIdentifier: "NoDataTableViewCell")
+        showActivityIndicator()
         configureView()
         loadData()
     }
 }
 
-// General Functions
+
+
+
+// MARK: - General Functions
 extension ViewController {
 
     func loadData() {
@@ -45,6 +52,7 @@ extension ViewController {
 
     func refresh() {
 
+        hideActivityIndicator()
         DispatchQueue.main.async {
 
             self.tableView.reloadData()
@@ -52,7 +60,10 @@ extension ViewController {
     }
 }
 
-// Tableview Related
+
+
+
+// MARK: - Tableview Related
 extension ViewController: UITableViewDataSource,UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,9 +92,8 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
         }
         else {
 
-//            let cell = tableView.dequeueReusableCell(withIdentifier: NoDataTableViewCell.identifier) as! NoDataTableViewCell
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: NoDataTableViewCell.identifier) as! NoDataTableViewCell
+            return cell
         }
-
     }
 }
