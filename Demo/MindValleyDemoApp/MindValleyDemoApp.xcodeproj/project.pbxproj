@@ -27,6 +27,7 @@
 		3D8528822215AFA30066899D /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8528812215AFA30066899D /* UITableViewCell.swift */; };
 		3DB8DDF82218FE0D00CA87B5 /* NoDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8DDF62218FE0D00CA87B5 /* NoDataTableViewCell.swift */; };
 		3DB8DDF92218FE0D00CA87B5 /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB8DDF72218FE0D00CA87B5 /* NoDataTableViewCell.xib */; };
+		3DB8DDFC221A916F00CA87B5 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8DDFB221A916F00CA87B5 /* ImageCacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		3D8528812215AFA30066899D /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		3DB8DDF62218FE0D00CA87B5 /* NoDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataTableViewCell.swift; sourceTree = "<group>"; };
 		3DB8DDF72218FE0D00CA87B5 /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
+		3DB8DDFB221A916F00CA87B5 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		3D3CEDB12212F7B800C07AB9 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				3DB8DDFB221A916F00CA87B5 /* ImageCacheManager.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 			files = (
 				3D85287F221547AC0066899D /* ShadowView.swift in Sources */,
 				3D3CEDB82212FD4700C07AB9 /* NetworkRequestHelper.swift in Sources */,
+				3DB8DDFC221A916F00CA87B5 /* ImageCacheManager.swift in Sources */,
 				3D0488822213B56800B96CD3 /* DataManager.swift in Sources */,
 				3D3CED812212F4EC00C07AB9 /* ViewController.swift in Sources */,
 				3D3CEDBC2212FD8E00C07AB9 /* Parser.swift in Sources */,

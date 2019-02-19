@@ -19,7 +19,7 @@ class HomeTableViewCell: UITableViewCell {
         didSet {
 
             let imageString = data?.profile_image?.medium
-            userImageView.image = UIImage()
+            userImageView.cacheImage(urlString: imageString ?? "")
             idLabel.text = data?.id
             usernameLabel.text = data?.name
         }
